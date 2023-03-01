@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Task four js for the SEF academy ENG.Islam Mohamed">
+    
+    <!-- ////////////// font awesome ///////////////// -->
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- ////////////// style file ///////////////// -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- ////////////// bootstrap ///////////////// -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+<!-- ////////////// google fonts ///////////////// -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
+    <title>SEF Task four js</title>
+</head>
+<body>
+    <nav class="navbar bg-secondary">
+        <div class="container d-flex navbar-nav flex-md-row ">
+                <figure class="m-0">
+                    <img class="rounded-circle" width="60" height="60" src="images/logo.png" alt="">
+                </figure>
+                <ul class="nav">
+                    <li class="nav-link text-light text-uppercase btn"  id="all">all</li>
+                    <li class="nav-link text-light text-uppercase btn"  id="iphone">iphone</li>
+                    <li class="nav-link text-light text-uppercase btn"  id="oppo">oppo</li>
+                    <li class="nav-link text-light text-uppercase btn"  id="samsung">samsung</li>
+                </ul>
+                <div class="cart btn text-light"  data-bs-toggle="modal" data-bs-target="#myCart">
+                    <i class="fas fa-shopping-cart fs-3"></i>
+                    <span id="count">0</span>
+                </div> <!-- /cart -->
+        </div> <!-- /container -->
+        <div class="cart-content">
+            <div class="modal mt-5" id="myCart">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                    <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">My Cart</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div> <!-- /modal-header -->
+                    <!-- Modal body -->
+                        <div class="modal-body"></div> <!-- /modal-body -->
+                    <!-- Modal footer -->
+                        <div class="modal-footer justify-content-between">
+                            <button type="button" class="btn btn-secondary" id="btn-total">Total</button>
+                            <span id="total-num" class="fw-bold fs-2"></span>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div> <!-- /modal-footer -->
+                    </div> <!-- /modal-content -->
+                </div> <!-- /modal-dialog -->
+            </div> <!-- /model -->
+        </div> <!-- /cart-content -->
+    </nav>
+    <main class="mt-5 container">
+        <div class="items row row-gap-4 justify-content-center justify-content-md-between  text-center">
+            <div class="card col-xl-3 col-lg-4 col-12" kind="iphone" price="1200" name="iphone 14 pro max" style="width:300px" >
+                <img class="card-img-top" src="images/iphone14promax.jpg" alt="iphone 14 pro max">
+                <div class="card-body">
+                    <h4 class="card-title">iphone 14 pro max</h4>
+                    <p class="card-text">1200 $</p>
+                </div> <!-- /card-body -->
+            </div> <!-- /card -->
+            <div class="card col-xl-3 col-lg-4 col-12" kind="iphone" price="1000" name="iphone 13 pro max" style="width:300px">
+                <img class="card-img-top" src="images/iphone13promax.jpg" alt="iphone 13 pro max">
+                <div class="card-body">
+                    <h4 class="card-title">iphone 13 pro max</h4>
+                    <p class="card-text">1000 $</p>
+                </div> <!-- /card-body -->
+            </div> <!-- /card -->
+            <div class="card col-xl-3 col-lg-4 col-12" kind="iphone" price="900" name="iphone 12 pro max" style="width:300px">
+                <img class="card-img-top" src="images/iphone12promax.jpg" alt="iphone 12 pro max">
+                <div class="card-body">
+                    <h4 class="card-title">iphone 12 pro max</h4>
+                    <p class="card-text">900 $</p>
+                </div> <!-- /card-body -->
+            </div> <!-- /card -->
+            <div class="card col-xl-3 col-lg-4 col-12 iphone" kind="iphone" price="800" name="iphone 11 pro max" style="width:300px">
+                <img class="card-img-top" src="images/iphone11promax.jpg" alt="iphone 11 pro max">
+                <div class="card-body">
+                    <h4 class="card-title">iphone 11 pro max</h4>
+                    <p class="card-text">800 $</p>
+                </div> <!-- /card-body -->
+            </div> <!-- /card -->
+            <div class="card col-xl-3 col-lg-4 col-12" kind="oppo" price="500" name="Oppo Reno 9" style="width:300px">
+                <img class="card-img-top" src="images/Oppo-Reno-9-Lite.jpg" alt="Oppo Reno 9">
+                <div class="card-body">
+                    <h4 class="card-title">Oppo Reno 9</h4>
+                    <p class="card-text">500 $</p>
+                </div> <!-- /card-body -->
+            </div> <!-- /card -->
+            <div class="card col-xl-3 col-lg-4 col-12" kind="oppo" price="400" name="Oppo Reno 8" style="width:300px">
+                <img class="card-img-top" src="images/Oppo-Reno-8.jpg" alt="Oppo Reno 8">
+                <div class="card-body">
+                    <h4 class="card-title">Oppo Reno 8</h4>
+                    <p class="card-text">400 $</p>
+                </div> <!-- /card-body -->
+            </div> <!-- /card -->
+            <div class="card col-xl-3 col-lg-4 col-12" kind="oppo" price="300" name="Oppo Reno 7" style="width:300px">
+                <img class="card-img-top" src="images/Oppo-Reno-7.jpg" alt="Oppo Reno 7">
+                <div class="card-body">
+                    <h4 class="card-title">Oppo Reno 7</h4>
+                    <p class="card-text">300 $</p>
+                </div> <!-- /card-body -->
+            </div> <!-- /card -->
+            <div class="card col-xl-3 col-lg-4 col-12" kind="oppo" price="200" name="Oppo Reno 6" style="width:300px">
+                <img class="card-img-top" src="images/Oppo-Reno-6.jpg" alt="Oppo Reno 6">
+                <div class="card-body">
+                    <h4 class="card-title">Oppo Reno 6</h4>
+                    <p class="card-text">200 $</p>
+                </div> <!-- /card-body -->
+            </div> <!-- /card -->
+            <div class="card col-xl-3 col-lg-4 col-12" kind="samsung" price="500" name="Samsung Galaxy A32" style="width:300px">
+                <img class="card-img-top" src="images/Samsung-Galaxy-A32.jpg" alt="Samsung Galaxy A32">
+                <div class="card-body">
+                    <h4 class="card-title">Samsung Galaxy A32</h4>
+                    <p class="card-text">500 $</p>
+                </div> <!-- /card-body -->
+            </div> <!-- /card -->
+            <div class="card col-xl-3 col-lg-4 col-12" kind="samsung" price="400" name="Samsung Galaxy A52" style="width:300px">
+                <img class="card-img-top" src="images/samsung-galaxy-a52.jpg" alt="samsung galaxy a52">
+                <div class="card-body">
+                    <h4 class="card-title">samsung galaxy a52</h4>
+                    <p class="card-text">400 $</p>
+                </div> <!-- /card-body -->
+            </div> <!-- /card -->
+            <div class="card col-xl-3 col-lg-4 col-12" kind="samsung" price="300" name="Samsung Galaxy A50" style="width:300px">
+                <img class="card-img-top" src="images/samsung-galaxy-a50.jpg" alt="samsung galaxy a50">
+                <div class="card-body">
+                    <h4 class="card-title">samsung galaxy a50</h4>
+                    <p class="card-text">300 $</p>
+                </div> <!-- /card-body -->
+            </div> <!-- /card -->
+            <div class="card col-xl-3 col-lg-4 col-12" kind="samsung" price="600" name="Samsung Galaxy S22" style="width:300px">
+                <img class="card-img-top" src="images/Samsung-Galaxy-S22.jpg" alt="Samsung Galaxy S22">
+                <div class="card-body">
+                    <h4 class="card-title">Samsung Galaxy S22</h4>
+                    <p class="card-text">600 $</p>
+                </div> <!-- /card-body -->
+            </div> <!-- /card -->
+        </div> <!-- /items -->
+    </main>
+    <footer class="footer bg-secondary text-center mt-5">
+        <p class="mb-0 fw-bold py-4 fs-5 text-light">COPYRIGHT &copy; 2023 . ALL RIGHT RESERVED BY M.Adel</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
