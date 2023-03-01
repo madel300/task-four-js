@@ -8,6 +8,7 @@ var cartCount = document.getElementById("count");
 var cartItems = document.querySelector(".modal-body");
 var btnTotal = document.querySelector("#btn-total");
 var totalPriceShow = document.querySelector("#total-num");
+var cart = document.querySelector(".cart")
 var itemCount = 0;
 var totalPrice = 0;
 
@@ -67,4 +68,7 @@ allItems.forEach(function(item) {
 // total price////////////////////////////////////////////////////////////////
 btnTotal.onclick = function() {
     totalPriceShow.innerHTML = "total (" +totalPrice + "$)"
+}
+cart.onclick = function() {
+    totalPriceShow.innerHTML = "";
 }
